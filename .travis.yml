@@ -23,3 +23,9 @@ matrix:
     - name: "Elixir 1.7.3 OTP 21.1.1"
       elixir: 1.7.3
       otp_release: 21.1.1
+    - name: "Elixir 1.8.1 OTP 20.3.8"
+      elixir: 1.8.1
+      otp_release: 20.3.8
+    - name: "Elixir 1.8.1 OTP 21.3.6"
+      elixir: 1.8.1
+      otp_release: 21.3.6
