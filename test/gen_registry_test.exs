@@ -301,8 +301,8 @@ defmodule GenRegistry.Test do
     test "populated registry, populated accumulator" do
       acc = [{1, nil}, {2, nil}, {3, nil}]
 
-      expected =
-        for i <- 4..5, into: acc do
+      expected = acc ++
+        for i <- 4..5 do
           assert {:ok, pid} = GenRegistry.lookup_or_start(ExampleWorker, i)
           {i, pid}
         end
